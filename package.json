@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jorgeabrahan/leaderboard#readme",
   "dependencies": {
     "lighthouse": "^9.6.8"
+  },
+  "devDependencies": {
+    "hint": "^7.1.3"
   }
 }
