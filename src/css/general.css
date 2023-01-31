@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+  font-family: 'Pangolin', cursive;
+}
+
+.grid {
+  display: grid;
+}
+.grid-cols-fit-350px {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.max-width-1100px {
+  max-width: 1100px;
+}
+.margin-x-auto {
+  margin-inline: auto;
+}
+
+/* accessibility */
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
