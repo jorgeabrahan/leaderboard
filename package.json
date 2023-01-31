@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jorgeabrahan/leaderboard/issues"
   },
-  "homepage": "https://github.com/jorgeabrahan/leaderboard#readme"
+  "homepage": "https://github.com/jorgeabrahan/leaderboard#readme",
+  "dependencies": {
+    "lighthouse": "^9.6.8"
+  }
 }
