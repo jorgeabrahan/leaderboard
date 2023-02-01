@@ -11,7 +11,7 @@
       <section>
         <div>
           <h2>Recent scores</h2>
-          <button>Refresh</button>
+          <button id="btnRefresh">Refresh</button>
         </div>
         <div class="scores" id="cntScores"></div>
       </section>
@@ -20,23 +20,21 @@
         <form id="frmAddScore">
           <div>
             <label class="sr-only" for="name">Ingresa tu nombre</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              autocomplete="off"
-              minlength="5"
-              required
-            />
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" required />
           </div>
           <div>
             <label class="sr-only" for="score">Ingresa tu puntuación</label>
             <input type="number" id="score" name="score" placeholder="Your score" autocomplete="off" min="1" required />
           </div>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <div class="error hide" id="cntError">
+      <div class="error__content">
+        <p>Error connecting with the API, please try again later.</p>
+        <button class="error__button" onclick="this.parentElement.parentElement.classList.add('hide')">Aceptar</button>
+      </div>
+    </div>
   </body>
 </html>

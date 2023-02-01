@@ -20,6 +20,10 @@ body {
   margin-inline: auto;
 }
 
+.hide {
+  display: none;
+}
+
 /* accessibility */
 .sr-only {
   clip: rect(0 0 0 0);
