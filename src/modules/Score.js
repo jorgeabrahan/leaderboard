@@ -1,6 +1,6 @@
 export default class Score {
-  constructor(name, score) {
-    this.name = name;
+  constructor(user, score) {
+    this.user = user;
     this.score = score;
   }
 
@@ -8,7 +8,7 @@ export default class Score {
     const p = document.createElement('p');
     p.className = 'score';
     p.innerHTML = `
-      <span>${this.name}</span>:<span>${this.score}</span>
+      <span>${this.user}</span>:<span>${this.score}</span>
     `;
     return p;
   }
