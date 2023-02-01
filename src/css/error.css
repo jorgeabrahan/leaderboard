@@ -1,0 +1,27 @@
+.error {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.error__content {
+  max-width: 350px;
+  padding: 1rem;
+  border: 3px solid black;
+  box-shadow: 3px 3px 0 0 black;
+}
+
+.error__button {
+  display: block;
+  margin-left: auto;
+  padding: 0.3rem 0.6rem;
+  border: 3px solid black;
+  box-shadow: 3px 3px 0 0 black;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.error__button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}

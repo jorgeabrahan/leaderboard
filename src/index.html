@@ -30,5 +30,11 @@
         </form>
       </section>
     </main>
+    <div class="error hide" id="cntError">
+      <div class="error__content">
+        <p>Error connecting with the API, please try again later.</p>
+        <button class="error__button" onclick="this.parentElement.parentElement.classList.add('hide')">Aceptar</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -5,9 +5,10 @@ import Scores from './modules/Scores.js';
 const frmAddScore = document.getElementById('frmAddScore');
 const cntScores = document.getElementById('cntScores');
 const btnRefresh = document.getElementById('btnRefresh');
+const cntError = document.getElementById('cntError');
 const scores = new Scores(cntScores);
 
-const game = new Game("jorge's game");
+const game = new Game("jorge's game", cntError);
 game.create();
 
 const btnSubmit = frmAddScore.querySelector('[type="submit"]');
