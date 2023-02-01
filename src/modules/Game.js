@@ -32,4 +32,26 @@ export default class Game {
         });
     });
   }
+
+  addScore(user, score) {
+    return new Promise((resolve, reject) => {
+      fetch(`${this.apiUri}games/${this.id}/scores`, {
+        method: 'POST',
+        body: JSON.stringify({
+          user,
+          score,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then(({ result }) => {
+          resolve(result);
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  }
 }

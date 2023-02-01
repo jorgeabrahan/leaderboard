@@ -13,7 +13,9 @@ frmAddScore.addEventListener('submit', (e) => {
   e.preventDefault();
   const name = frmAddScore.name.value.trim();
   const score = frmAddScore.score.value.trim();
-  scores.add(name, score);
-  frmAddScore.reset();
-  frmAddScore.name.focus();
+  game.addScore(name, Number(score)).then(() => {
+    scores.add(name, score);
+    frmAddScore.reset();
+    frmAddScore.name.focus();
+  });
 });
