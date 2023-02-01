@@ -4,6 +4,26 @@ body {
   font-family: 'Pangolin', cursive;
 }
 
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
 .grid {
   display: grid;
 }
@@ -22,6 +42,20 @@ body {
 
 .hide {
   display: none;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  padding: 0.3rem 0.6rem;
+  border: 3px solid black;
+  box-shadow: 3px 3px 0 0 black;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
 }
 
 /* accessibility */

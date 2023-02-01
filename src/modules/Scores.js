@@ -4,6 +4,7 @@ export default class Scores {
   constructor(container) {
     this.scores = [];
     this.container = container;
+    this.toggleBorder();
   }
 
   instanceScores() {
@@ -18,6 +19,7 @@ export default class Scores {
     const scoreObj = new Score(name, score);
     this.scores.push(scoreObj);
     this.container.appendChild(scoreObj.html());
+    this.toggleBorder();
   }
 
   refresh(scores) {
@@ -32,5 +34,11 @@ export default class Scores {
       fragment.appendChild(score.html());
     });
     this.container.appendChild(fragment);
+    this.toggleBorder();
+  }
+
+  toggleBorder() {
+    if (this.scores.length > 0) this.container.classList.add('has-content');
+    else this.container.classList.remove('has-content');
   }
 }
