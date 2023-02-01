@@ -1,0 +1,28 @@
+.leaderboard {
+  padding-inline: 1rem;
+  gap: 5rem;
+}
+.leaderboard__input {
+  border: 3px solid black;
+  box-shadow: 1px 1px 1px black;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 0.3rem;
+  outline: none;
+}
+
+.scores.has-content {
+  border: 3px solid black;
+}
+.score {
+  padding: 0.2rem 0.5rem;
+}
+.score:nth-child(even) {
+  background: #dddddd;
+}
+
+@media (min-width: 1000px) {
+  .leaderboard__add {
+    max-width: 300px;
+  }
+}
