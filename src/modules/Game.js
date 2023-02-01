@@ -9,6 +9,7 @@ export default class Game {
     return new Promise((resolve, reject) => {
       if (this.id.length > 0) {
         resolve(this.id);
+        return;
       }
 
       fetch(`${this.apiUri}games/`, {
