@@ -40,4 +40,10 @@ export default class Game {
     const { result } = await response.json();
     return result;
   }
+
+  async getScores() {
+    const response = await fetch(`${this.apiUri}games/${this.id}/scores`);
+    const { result } = await response.json();
+    return result;
+  }
 }
